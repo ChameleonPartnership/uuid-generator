@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "python3 -m http.server 8000",
-    "dev": "http-server . -p 8000",
+    "dev": "python3 -m http.server 8000",
     "test": "jest",
     "build": "echo 'Static site - no build needed'",
     "lint": "eslint assets/js/*.js"
