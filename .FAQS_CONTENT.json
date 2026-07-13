@@ -1,0 +1,50 @@
+[
+  [
+    "What is a UUID?",
+    "A UUID (Universally Unique Identifier) is a 128-bit identifier used to uniquely identify objects in computer systems."
+  ],
+  [
+    "What is a GUID?",
+    "GUID (Globally Unique Identifier) is Microsoft's term for UUID. They are functionally equivalent and interchangeable."
+  ],
+  [
+    "What UUID version should I use?",
+    "Use v4 for random generation (most common), v1 for time-based, v5 for deterministic hashing, and v7 for sortable timestamps."
+  ],
+  [
+    "Can UUIDs collide?",
+    "Collision probability is virtually impossible with proper generation (1 in 5.3 \u00d7 10^36)."
+  ],
+  [
+    "Are UUIDs case-sensitive?",
+    "No. UUID representations are case-insensitive; both uppercase and lowercase are valid."
+  ],
+  [
+    "What is the format of a UUID?",
+    "Format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where x is a hexadecimal digit (8-4-4-4-12 pattern)."
+  ],
+  [
+    "Can I validate UUIDs?",
+    "Yes. Valid UUIDs follow the RFC 4122 format and can be validated using regular expressions."
+  ],
+  [
+    "What is a nil UUID?",
+    "A nil UUID (00000000-0000-0000-0000-000000000000) is a special all-zeros UUID used for null references."
+  ],
+  [
+    "Are UUIDs suitable for database primary keys?",
+    "Yes. UUIDs make excellent distributed primary keys and prevent ID collision in decentralized systems."
+  ],
+  [
+    "What is UUID v1?",
+    "UUID v1 is time-based, using timestamp and MAC address. Less common due to privacy concerns."
+  ],
+  [
+    "What is UUID v5?",
+    "UUID v5 is deterministic, generated from a namespace and name using SHA-1. Same input always produces the same UUID."
+  ],
+  [
+    "Can UUIDs be predicted?",
+    "Random UUIDs (v4) cannot be predicted. Deterministic UUIDs (v5) are predictable if you know the namespace and name."
+  ]
+]
