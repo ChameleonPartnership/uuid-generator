@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online UUID/GUID generator. Generate v1, v4, v5, v7 UUIDs instantly. Validate UUIDs, export as JSON/CSV, and manage your UUID history with copy-to-clipboard functionality.">
+    <meta name="description" content="Generate private UUID v1, v4, v5 and v7 IDs in your browser. Validate, batch copy, export JSON or CSV, and learn when each UUID version fits.">
     <meta name="keywords" content="UUID generator, GUID generator, UUID v4, UUID v5, UUID validation, online tool, free">
     <meta name="author" content="UUID Generator Pro">
     <meta name="robots" content="index, follow">
     <meta property="article:published_time" content="2024-01-01T00:00:00Z">
-    <meta property="article:modified_time" content="2026-07-05T00:00:00Z">
+    <meta property="article:modified_time" content="2026-08-11T00:00:00Z">
     <link rel="canonical" href="https://uuid-generator.pro/">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%233b82f6'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Arial,sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EID%3C/text%3E%3C/svg%3E">
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="UUID Generator - Free Online Tool">
-    <meta property="og:description" content="Generate, validate, and export UUIDs. Support for v1, v4, v5, v7 versions with batch generation and custom options.">
+    <meta property="og:title" content="UUID Generator - Private v1, v4, v5 and v7 Tool">
+    <meta property="og:description" content="Generate private UUID v1, v4, v5 and v7 IDs in your browser. Validate, batch copy, export JSON or CSV, and learn when each UUID version fits.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://uuid-generator.pro/">
     <meta property="og:image" content="https://uuid-generator.pro/og-image.png">
@@ -22,8 +22,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="UUID Generator - Free Online Tool">
-    <meta name="twitter:description" content="Generate, validate, and export UUIDs instantly.">
+    <meta name="twitter:title" content="UUID Generator - Private v1, v4, v5 and v7 Tool">
+    <meta name="twitter:description" content="Generate private UUIDs, validate existing IDs, and export batches from your browser.">
     <meta name="twitter:image" content="https://uuid-generator.pro/og-image.png">
 
     <!-- Structured Data (JSON-LD) -->
@@ -52,7 +52,7 @@
             "url": "https://uuid-generator.pro/"
         },
         "datePublished": "2024-01-01T00:00:00Z",
-        "dateModified": "2026-07-05T00:00:00Z"
+        "dateModified": "2026-08-11T00:00:00Z"
     }
     </script>
 
@@ -141,8 +141,8 @@
         ]
     }
     </script>
-
-    <title>UUID Generator - Free Online v1, v4, v5, v7 GUID Tool</title>
+    
+    <title>UUID Generator - Private v1, v4, v5 and v7 GUID Tool</title>
     <style>
         * {
             margin: 0;
@@ -831,22 +831,13 @@
         </header>
 
 
-        <!-- AD UNIT 1: Above Calculator (Above-the-fold) -->
-        <div class="ad-container ad-top" style="margin: 1rem 0; min-height: 90px;">
-          <ins class="adsbygoogle"
-               style="display:block; text-align:center;"
-               data-ad-layout="in-article"
-               data-ad-format="horizontal"
-               data-ad-client="ca-pub-6100778423642867"
-               data-ad-slot="1234567890"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
+        
 <!-- AISO audit trail: visible answer-first blurb added for AI citation, 2026-07-05. -->
         <section id="generator" class="intro-section" aria-labelledby="uuid-intro-heading">
             <h2 id="uuid-intro-heading">What is a UUID generator?</h2>
             <p class="section-blurb">A UUID generator creates universally unique identifiers for databases, APIs, logs, distributed systems, and test data. UUID Generator Pro supports v1, v4, v5, and v7 formats, validates existing IDs, and keeps generation private by running entirely in your browser.</p>
+            <p class="section-blurb">A UUID is useful when a record must be named before a central database has assigned its own numeric key. Client applications can prepare objects, background jobs can create trace IDs, and independent services can exchange references without first asking one shared server for the next value. This page focuses on practical UUID work: choosing a version, generating batches, checking pasted values, and exporting identifiers in formats that fit code reviews, fixtures, seed files, API tests, and database migrations.</p>
+            <p class="section-blurb">The generator runs locally with browser APIs. Random UUIDs use cryptographic randomness where the browser provides it, v5 UUIDs are derived from a namespace and name, and v7 UUIDs combine a time component with random bytes so they sort more naturally in modern data stores. The tool does not ask you to create an account, upload a file, or send generated UUIDs to an application server for processing.</p>
         </section>
 
         <!-- Main Content -->
@@ -955,25 +946,81 @@
             </div>
         </div>
 
-        <!-- About This Tool Section -->
-        <section style="margin: 60px 0; padding: 40px; background: var(--bg-gray); border-radius: 12px;" role="region" aria-label="About UUID Generator">
-            <h2 style="margin-top: 0;">About UUID Generator</h2>
+        <section style="margin: 60px 0; padding: 40px; background: var(--bg-gray); border-radius: 8px;" role="region" aria-label="How UUID Generator works">
+            <h2 style="margin-top: 0;">How UUID Generator Pro works</h2>
             <p>
-                <strong>UUID Generator</strong> is a free, browser-based tool for creating universally unique identifiers instantly. Whether you need random v4 UUIDs, time-based v1 identifiers, deterministic v5 generation, or sortable v7 UUIDs, this tool supports all major UUID versions.
+                <strong>UUID Generator Pro</strong> is a browser-based utility for creating identifiers at the moment you need them. Choose the UUID version, decide how many values to create, select the output style, and generate the list. The result appears on the page with copy controls and download options, so you can paste one ID into a migration, copy a batch into a fixture file, or export a list for a spreadsheet without installing a package.
+            </p>
+            <p>
+                UUID v4 is the safest everyday default because it is random and does not reveal time, host, or input data. UUID v5 is deterministic: with namespace DNS and the name <code>api.uuid-generator.pro</code>, the same input will always produce the same identifier, which is useful for repeatable imports and stable external references. UUID v7 is helpful when records are inserted at high volume and you want keys that broadly follow creation time, reducing the awkward indexing pattern caused by fully random identifiers.
             </p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 25px;">
                 <div>
-                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">🚀 Fast & Secure</h3>
-                    <p style="margin: 0; font-size: 0.95rem; color: var(--text-light);">All UUIDs generated client-side using cryptographically secure Web Cryptography API. No data transmission.</p>
+                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">Private generation</h3>
+                    <p style="margin: 0; font-size: 0.95rem; color: var(--text-light);">Generated UUIDs, pasted validation values, namespaces, and export contents stay in your browser.</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">📊 Multiple Formats</h3>
-                    <p style="margin: 0; font-size: 0.95rem; color: var(--text-light);">Export generated UUIDs as JSON, CSV, or plain text. Batch generate up to 1,000 UUIDs at once.</p>
+                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">Practical exports</h3>
+                    <p style="margin: 0; font-size: 0.95rem; color: var(--text-light);">Export generated UUIDs as JSON, CSV, or plain text. Batch generation supports up to 1,000 UUIDs at once.</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">✅ Validator Built-in</h3>
+                    <h3 style="font-size: 1rem; margin: 0 0 10px 0; color: var(--primary-color);">Validator built in</h3>
                     <p style="margin: 0; font-size: 0.95rem; color: var(--text-light);">Validate any UUID format and detect its version. Supports dashes, braces, and raw hex formats.</p>
                 </div>
+            </div>
+        </section>
+
+        <section style="margin: 60px 0;" role="region" aria-label="How to use UUID Generator">
+            <h2>Step-by-step guide</h2>
+            <ol style="display: grid; gap: 16px; padding-left: 24px;">
+                <li><strong>Pick the UUID version.</strong> Use v4 for ordinary database rows, job IDs, invite tokens, and test data. Choose v7 when chronological sorting matters. Choose v5 when a stable input should always map to the same output.</li>
+                <li><strong>Enter version-specific data when needed.</strong> For v5, select a namespace and type the name value. For example, namespace DNS with <code>example.com</code> creates a repeatable UUID for that domain-style identifier.</li>
+                <li><strong>Set the batch size.</strong> A count of <code>1</code> is best for a single API request or migration. A count such as <code>25</code> is useful for seed data, automated tests, and sample records.</li>
+                <li><strong>Choose the separator format.</strong> Dashes are standard, braces are common in some Windows and .NET contexts, and the no-separator format is useful when a legacy system expects exactly 32 hexadecimal characters.</li>
+                <li><strong>Generate, copy, or export.</strong> Copy individual values for quick use, copy the entire batch for a script, or download JSON, CSV, or plain text depending on the destination.</li>
+                <li><strong>Validate before shipping.</strong> Paste any incoming identifier into the validator to check whether it is shaped like a UUID and to inspect the version nibble before adding it to code or data.</li>
+            </ol>
+        </section>
+
+        <section style="margin: 60px 0;" role="region" aria-label="Worked UUID examples">
+            <h2>Worked examples</h2>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; min-width: 760px;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left; border-bottom: 1px solid var(--border-color); padding: 10px;">Task</th>
+                            <th style="text-align: left; border-bottom: 1px solid var(--border-color); padding: 10px;">Input</th>
+                            <th style="text-align: left; border-bottom: 1px solid var(--border-color); padding: 10px;">Example output</th>
+                            <th style="text-align: left; border-bottom: 1px solid var(--border-color); padding: 10px;">Why it fits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Create a new order ID</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Version v4, count 1, dashes</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;"><code>9f1c2a6b-3b61-4c2d-9d8c-2f31f8a1b445</code></td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Random IDs are hard to guess and do not reveal creation time.</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Generate seed records</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Version v4, count 50, JSON export</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;"><code>{"uuids":["..."]}</code></td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">JSON drops neatly into fixtures and local test data.</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Create a stable domain key</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Version v5, DNS, <code>example.com</code></td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Same input returns the same UUID each time</td>
+                            <td style="border-bottom: 1px solid var(--border-color); padding: 10px;">Deterministic IDs make re-runs idempotent.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Index recent events</td>
+                            <td style="padding: 10px;">Version v7, count 10, plain text</td>
+                            <td style="padding: 10px;">Time-sortable UUID strings</td>
+                            <td style="padding: 10px;">Newer IDs sort close to insertion order in many storage engines.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -1012,31 +1059,16 @@
             </div>
         </section>
 
-<!-- AD UNIT 2: Sidebar Ad -->
-<div class="ad-container ad-sidebar" style="margin-bottom: 2rem; min-height: 250px;">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-6100778423642867"
-       data-ad-slot="2345678901"
-       data-ad-format="rectangle"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+        <section style="margin: 60px 0;" role="region" aria-label="UUID use cases">
+            <h2>Common UUID use cases</h2>
+            <p style="color: var(--text-light); line-height: 1.7;">UUIDs are a good fit when systems need to create identifiers independently. They are common in REST resources, GraphQL node IDs, event logs, message queues, background jobs, file metadata, audit records, import pipelines, feature-flag entities, payment reconciliation tables, and integration tests. A UUID does not guarantee business meaning; it gives you a compact unique reference that different parts of a system can safely pass around.</p>
+            <p style="color: var(--text-light); line-height: 1.7;">For production databases, store UUIDs in a native UUID type where the database supports one. In PostgreSQL, that usually means a <code>uuid</code> column rather than a longer text column. In APIs, keep the canonical dashed representation unless a consuming system documents a different format. When generating IDs for public URLs, remember that uniqueness is not the same as authorisation: users should still be authorised before a UUID-backed resource is returned.</p>
+        </section>
 
-<!-- AD UNIT 3: Before FAQ (Mid-content) -->
-<div class="ad-container ad-mid" style="margin: 2rem 0; min-height: 90px;">
-  <ins class="adsbygoogle"
-       style="display:block; text-align:center;"
-       data-ad-layout="in-article"
-       data-ad-format="horizontal"
-       data-ad-client="ca-pub-6100778423642867"
-       data-ad-slot="3456789012"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+        <section style="margin: 60px 0;" role="region" aria-label="UUID learning resources">
+            <h2>Related UUID guides</h2>
+            <p style="color: var(--text-light); line-height: 1.7;">For deeper background, read the site guides on <a href="blog/uuid-guide-versions.html">UUID versions 1, 4, 5, and 7</a>, <a href="blog/distributed-systems-uuid.html">using UUIDs in distributed systems</a>, and <a href="blog/guid-uuid-standards.html">GUID and UUID compatibility</a>. The <a href="blog/index.html">blog index</a> collects all articles, while the <a href="about.html">about page</a> explains how this browser utility is maintained.</p>
+        </section>
 
         <!-- FAQ Section -->
         <section style="margin: 60px 0;" role="region" aria-label="Frequently Asked Questions">
@@ -1098,6 +1130,51 @@
                         You can generate up to 1,000 UUIDs in a single batch. This is useful for bulk operations or populating databases. All generation happens instantly in your browser.
                     </p>
                 </details>
+
+                <details style="border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+                    <summary style="font-weight: 600; font-size: 1rem; color: var(--text-dark); user-select: none;">
+                        <h3 style="display: inline; margin: 0; font-size: 1rem;">Does this tool store my generated UUIDs?</h3>
+                    </summary>
+                    <p style="margin: 15px 0 0 0; color: var(--text-light); line-height: 1.7;">
+                        UUIDs are generated in your browser. The history panel may keep recent values in localStorage on your device so you can copy them again during the same workflow. They are not uploaded to a UUID Generator Pro application server.
+                    </p>
+                </details>
+
+                <details style="border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+                    <summary style="font-weight: 600; font-size: 1rem; color: var(--text-dark); user-select: none;">
+                        <h3 style="display: inline; margin: 0; font-size: 1rem;">Are UUIDs secret?</h3>
+                    </summary>
+                    <p style="margin: 15px 0 0 0; color: var(--text-light); line-height: 1.7;">
+                        No. UUIDs are identifiers, not passwords or access tokens. A random v4 UUID is difficult to guess, but your application should still check permissions before returning private data for any UUID in a URL or API request.
+                    </p>
+                </details>
+
+                <details style="border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+                    <summary style="font-weight: 600; font-size: 1rem; color: var(--text-dark); user-select: none;">
+                        <h3 style="display: inline; margin: 0; font-size: 1rem;">Why would I choose UUID v7 instead of v4?</h3>
+                    </summary>
+                    <p style="margin: 15px 0 0 0; color: var(--text-light); line-height: 1.7;">
+                        UUID v7 includes timestamp information, so newly created values tend to sort in creation order. That can help database indexes and event logs while still keeping enough random data for distributed generation.
+                    </p>
+                </details>
+
+                <details style="border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+                    <summary style="font-weight: 600; font-size: 1rem; color: var(--text-dark); user-select: none;">
+                        <h3 style="display: inline; margin: 0; font-size: 1rem;">Can I use UUIDs as database primary keys?</h3>
+                    </summary>
+                    <p style="margin: 15px 0 0 0; color: var(--text-light); line-height: 1.7;">
+                        Yes, but choose storage and indexing carefully. Native UUID column types are usually preferable to text columns. If insert locality matters, consider v7 or another ordered identifier strategy rather than random v4 values.
+                    </p>
+                </details>
+
+                <details style="border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+                    <summary style="font-weight: 600; font-size: 1rem; color: var(--text-dark); user-select: none;">
+                        <h3 style="display: inline; margin: 0; font-size: 1rem;">What does the validator check?</h3>
+                    </summary>
+                    <p style="margin: 15px 0 0 0; color: var(--text-light); line-height: 1.7;">
+                        The validator checks the expected hexadecimal UUID shape with optional separators and reports the version nibble when it can. It is a format check, not proof that a UUID exists in a particular database.
+                    </p>
+                </details>
             </div>
         </section>
 
@@ -1113,25 +1190,14 @@
         </div>
 
         <!-- Footer -->
-<!-- AD UNIT 4: Before Footer (Bottom content) -->
-<div class="ad-container ad-bottom" style="margin: 2rem 0; min-height: 90px;">
-  <ins class="adsbygoogle"
-       style="display:block; text-align:center;"
-       data-ad-layout="in-article"
-       data-ad-format="horizontal"
-       data-ad-client="ca-pub-6100778423642867"
-       data-ad-slot="4567890123"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+
 
         <footer role="contentinfo">
             <!-- AISO audit trail: visible ownership and review signal added for E-E-A-T, 2026-07-05. -->
             <section class="author-section" aria-labelledby="uuid-author-heading">
                 <h2 id="uuid-author-heading">About the Maintainer</h2>
                 <p>UUID Generator Pro is maintained by a developer tooling team specialising in privacy-first browser utilities for software teams. The tool follows RFC 4122 conventions, uses browser cryptography for random UUIDs, and is reviewed for accessible controls and practical export workflows.</p>
-                <p class="updated-date">Last updated: July 5, 2026</p>
+                <p class="updated-date">Last updated: August 11, 2026</p>
             </section>
             <p>&copy; 2026 UUID Generator Pro. All rights reserved.</p>
             <p style="margin-top: 10px; font-size: 0.85rem;">
@@ -1139,6 +1205,8 @@
                 <a href="privacy.html" style="color: var(--primary-color); text-decoration: none;">Privacy</a>
                 <span> • </span>
                 <a href="terms.html" style="color: var(--primary-color); text-decoration: none;">Terms</a>
+                <span> • </span>
+                <a href="about.html" style="color: var(--primary-color); text-decoration: none;">About</a>
                 <span> • </span>
                 <a href="https://github.com" style="color: var(--primary-color); text-decoration: none;">GitHub</a>
             </p>
@@ -1150,5 +1218,6 @@
 
     <!-- Main Script -->
     <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/consent.js" defer></script>
 </body>
 </html>

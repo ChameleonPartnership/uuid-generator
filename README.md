@@ -133,21 +133,12 @@ Edit CSS variables in `index.html` `<style>` section:
 }
 ```
 
-### Add Google AdSense
+### Google AdSense
 
-Replace the placeholder in `index.html`:
+Use the Auto Ads script only. Do not add fixed ad unit markup unless a real ad unit has been created in AdSense.
 
 ```html
-<!-- Find this section: -->
-<div class="ad-space">
-    <!-- Google AdSense Code will be inserted here -->
-    <small>Advertisement Space</small>
-</div>
-
-<!-- Replace with your AdSense code: -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx" crossorigin="anonymous"></script>
 ```
 
 ### Update SEO Meta Tags
