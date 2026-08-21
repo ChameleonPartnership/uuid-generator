@@ -10,9 +10,9 @@ UUID Generator Pro is a production-ready online tool for creating and validating
 
 ## Key Pages
 
-- [Home](https://uuid-generator.pro/) – Main tool interface
-- [About](https://uuid-generator.pro/about) – About UUID Generator Pro
-- [FAQ](https://uuid-generator.pro/#faq) – Frequently asked questions about UUIDs
+- [Home](https://www.uuid-generator.pro/) – Main tool interface
+- [About](https://www.uuid-generator.pro/about) – About UUID Generator Pro
+- [FAQ](https://www.uuid-generator.pro/#faq) – Frequently asked questions about UUIDs
 
 ## Use Cases
 

@@ -1,6 +1,6 @@
 # UUID Generator Pro — Complete Site Documentation
 
-**URL:** https://uuid-generator.pro/  
+**URL:** https://www.uuid-generator.pro/  
 **Type:** Web Application (UtilityApplication)  
 **Last Updated:** 2026-07-05  
 **License:** MIT  

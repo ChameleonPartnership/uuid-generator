@@ -249,14 +249,14 @@ Description: Free online UUID/GUID generator. Generate v1, v4, v5, v7 UUIDs
 Keywords: UUID generator, GUID generator, UUID v4, UUID v5, UUID validation, 
           online tool, free
 
-Canonical URL: https://uuid-generator.pro/ (ready for custom domain)
+Canonical URL: https://www.uuid-generator.pro/ (ready for custom domain)
 
 Open Graph:
 - og:title: "UUID Generator - Free Online Tool"
 - og:description: "Generate, validate, and export UUIDs..."
 - og:type: website
-- og:url: https://uuid-generator.pro/
-- og:image: https://uuid-generator.pro/og-image.png
+- og:url: https://www.uuid-generator.pro/
+- og:image: https://www.uuid-generator.pro/og-image.png
 
 Structured Data: SoftwareApplication (JSON-LD)
 - name: UUID Generator

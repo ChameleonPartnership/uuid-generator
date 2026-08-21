@@ -10,4 +10,4 @@ Disallow: /admin/
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://uuid-generator.pro/sitemap.xml
+Sitemap: https://www.uuid-generator.pro/sitemap.xml
